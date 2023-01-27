@@ -1,15 +1,13 @@
-
 //get element from html page
 const showPassword = document.getElementById("showPassword");
 const formResult = document.getElementById("formResult");
 const passwordSize = document.getElementById("passwordSize");
 
-//  password size change 
+//  password size change
 passwordSize.oninput = (e) => {
   const sizeValue = document.getElementById("sizeValue");
   sizeValue.innerText = e.target.value;
 };
-
 
 // password includes element
 let possibleCharacters = "";
@@ -28,7 +26,6 @@ formResult.onsubmit = (e) => {
 
   showPassword.value = generatePassword(Number(size), duplicate);
 };
-
 
 // password generate function
 function generatePassword(passwordLength, duplicate) {
@@ -50,7 +47,7 @@ function generatePassword(passwordLength, duplicate) {
   }
 }
 
-// password hide show 
+// password hide show
 const eyes = document.getElementById("eyes");
 let defaultValue = true;
 eyes.onclick = () => {
@@ -66,7 +63,6 @@ eyes.onclick = () => {
     defaultValue = true;
   }
 };
-
 
 // password copy
 copy.onclick = (e) => {
