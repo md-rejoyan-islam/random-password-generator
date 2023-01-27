@@ -1,15 +1,18 @@
+
+//get element from html page
 const showPassword = document.getElementById("showPassword");
 const formResult = document.getElementById("formResult");
-
 const passwordSize = document.getElementById("passwordSize");
 
+//  password size change 
 passwordSize.oninput = (e) => {
   const sizeValue = document.getElementById("sizeValue");
   sizeValue.innerText = e.target.value;
 };
 
-let possibleCharacters = "";
 
+// password includes element
+let possibleCharacters = "";
 formResult.onsubmit = (e) => {
   possibleCharacters = "";
   e.preventDefault();
