@@ -2,6 +2,7 @@
 const showPassword = document.getElementById("showPassword");
 const formResult = document.getElementById("formResult");
 const passwordSize = document.getElementById("passwordSize");
+const copy = document.getElementById("copy");
 
 //  password size change
 passwordSize.oninput = (e) => {
