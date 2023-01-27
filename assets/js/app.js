@@ -63,16 +63,16 @@ eyes.onclick = () => {
   }
 };
 
-const copy=document.getElementById('copy') 
+const copy = document.getElementById("copy");
 
-copy.onclick= (e) => {
-   if(!showPassword.value) return
+copy.onclick = (e) => {
+  if (!showPassword.value) return;
   window.navigator.clipboard.writeText(showPassword.value);
-e.target.innerHTML = `
+  e.target.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"  width="16" height="16" class='fill-white mt-2' x="0" y="0" viewBox="0 0 424.032 424" style="enable-background:new 0 0 512 512" xml:space="preserve" ><g><path d="M146.66 293.367c-4.094 0-8.191-1.558-11.305-4.695L4.688 158.004c-6.25-6.25-6.25-16.383 0-22.633s16.382-6.25 22.636 0l119.36 119.36L396.71 4.702c6.25-6.25 16.383-6.25 22.633 0s6.25 16.387 0 22.637L158.012 288.672a16.05 16.05 0 0 1-11.352 4.695zm0 0" data-original="#000000"></path></g></svg>
 `;
 
-setInterval(()=>{
-   e.target.innerHTML='copy'
-},1000)
+  setInterval(() => {
+    e.target.innerHTML = "copy";
+  }, 1000);
 };
