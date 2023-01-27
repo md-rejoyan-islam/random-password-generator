@@ -17,4 +17,4 @@
 
 ### Live Website Link
 
-<a href=''>Click</a>
+<a href='https://rejoyanislam.github.io/random-password-generator/'>Click</a>
