@@ -10,3 +10,7 @@
 * oninput event
 * navigator.clipboard.writeText()
 * onsubmit event
+* setInterval()
+
+### Live Website Link
+<a href=''>Click</a>
