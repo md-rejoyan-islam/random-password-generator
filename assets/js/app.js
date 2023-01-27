@@ -29,6 +29,8 @@ formResult.onsubmit = (e) => {
   showPassword.value = generatePassword(Number(size), duplicate);
 };
 
+
+// password generate function
 function generatePassword(passwordLength, duplicate) {
   let password = "";
   for (let i = 0; i <= passwordLength; i++) {
@@ -36,11 +38,9 @@ function generatePassword(passwordLength, duplicate) {
       Math.floor(Math.random() * possibleCharacters.length)
     );
   }
-
   let duplicateLetters = password
     .split("")
     .filter((val, i, arr) => arr.indexOf(val) !== i);
-
   if (duplicate) {
     return password;
   } else {
@@ -50,6 +50,7 @@ function generatePassword(passwordLength, duplicate) {
   }
 }
 
+// password hide show 
 const eyes = document.getElementById("eyes");
 let defaultValue = true;
 eyes.onclick = () => {
@@ -66,8 +67,9 @@ eyes.onclick = () => {
   }
 };
 
-const copy = document.getElementById("copy");
 
+//
+const copy = document.getElementById("copy");
 copy.onclick = (e) => {
   if (!showPassword.value) return;
   window.navigator.clipboard.writeText(showPassword.value);
