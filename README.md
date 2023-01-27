@@ -5,3 +5,8 @@
 * HTML:5
 * Tailwind CSS
 * JavaScript
+
+### Using JavaScript
+* oninput event
+* navigator.clipboard.writeText()
+* onsubmit event
